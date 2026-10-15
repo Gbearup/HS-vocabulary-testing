@@ -4,19 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LiveABC英文雜誌 單字複習與測驗</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        
-    </style>
+    <link rel="stylesheet" href="style.css">   
 </head>
 <body>
     <div class="container">
 
          <div class="lesson-tabs">
-             <button class="lesson1-btn lesson0-btn" onclick="location.href='index.html'">📚回首頁</button>
+            <button class="lesson1-btn lesson0-btn" onclick="location.href='index.html'">📚回首頁</button>
             <button class="lesson1-btn  lesson0-btn" onclick="location.href='index-TextBook.html'">📚 課本專區</button>
             <button class="lesson1-btn lesson0-btn active" onclick="location.href='index-LiveABC.html'">📚 LiveABC 專區</button>
-            <button class="lesson1-btn lesson0-btn" onclick="location.href='index-7000.html'">📚 7000 單字專區</button>
+            <button class="lesson1-btn lesson0-btn" onclick="location.href='index-LiveABC_10.html'">📚 LiveABC-10月份 專區</button>
+            <button class="lesson1-btn lesson0-btn" onclick="location.href='index-7000.html'">📚 核心單字專區</button>
         </div>
 
         
@@ -33,7 +31,7 @@
             <button class="lesson-btn active" onclick="switchLesson('lesson1')">📚 9月份</button>
             <button class="lesson-btn" onclick="switchLesson('lesson2')">📚 10月份</button>
             <button class="lesson-btn" onclick="switchLesson('lesson3')">📚 11月份</button>
-            <button class="lesson-btn" onclick="switchLesson('review1')">📚 12月份</button>
+            <button class="lesson-btn" onclick="switchLesson('lesson4')">📚 12月份</button>
             <button class="lesson-btn" onclick="switchLesson('all')">🌟 總測驗</button>
         </div>
 
@@ -216,8 +214,8 @@
             </div>
         </div>
 
-        <!-- ==================== Review 1 內容容器 ==================== -->
-        <div id="review1-container" class="lesson-content">
+        <!-- ==================== Lesson 4 內容容器 ==================== -->
+        <div id="lesson4-container" class="lesson-content">
             <div class="nav-tabs">
                 <button class="tab-btn active" onclick="switchTab('l4', 'list')">📖 單字列表</button>
                 <button class="tab-btn" onclick="switchTab('l4', 'quiz')">📝 開始測驗</button>

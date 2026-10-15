@@ -8,6 +8,12 @@
 </head>
 <body>
     <div class="container">
+        <div class="lesson-tabs">
+            <button class="lesson1-btn lesson0-btn" onclick="location.href='index.html'">📚 回首頁 </button>
+            <button class="lesson1-btn lesson0-btn" onclick="location.href='index-TextBook.html'">📚 課本專區</button>
+            <button class="lesson1-btn lesson0-btn" onclick="location.href='index-LiveABC.html'">📚LiveABC 單字專區</button>
+            <button class="lesson1-btn lesson0-btn" onclick="location.href='index-7000.html'">📚核心單字專區</button>
+        </div>
         <header>
             <h1 id="page-title">LiveABC英文雜誌 10月份 單字複習與測驗</h1>  
         </header>
@@ -28,12 +34,12 @@
         // 【動態設定區】以後只要在這裡加單元，或在 JS 加資料，HTML 永遠不用動！
         // =========================================================================
         const unitsConfig = [
-            { id: 'lesson1', shortId: 'l1', name: '第1週', dataVar: 'magazine10w1WordsData' },
-            { id: 'lesson2', shortId: 'l2', name: '第2週', dataVar: 'magazine10w2WordsData' },
-            { id: 'lesson3', shortId: 'l3', name: '第3週', dataVar: 'magazine10w3WordsData' },
-            { id: 'lesson4', shortId: 'l4', name: '第4週', dataVar: 'magazine10w4WordsData' }
-            // 之後要加第5週、第6週...直接在這裡繼續加物件即可：
-            // { id: 'lesson5', shortId: 'l5', name: '第5週', dataVar: 'magazine10w5WordsData' },
+            { id: 'lesson1', shortId: 'l1', name: '第1單元', dataVar: 'magazine10w1WordsData' },
+            { id: 'lesson2', shortId: 'l2', name: '第2單元', dataVar: 'magazine10w2WordsData' },
+            { id: 'lesson3', shortId: 'l3', name: '第3單元', dataVar: 'magazine10w3WordsData' },
+            { id: 'lesson4', shortId: 'l4', name: '第4單元', dataVar: 'magazine10w4WordsData' }
+            // 之後要加第5單元、第6單元...直接在這裡繼續加物件即可：
+            // { id: 'lesson5', shortId: 'l5', name: '第5單元', dataVar: 'magazine10w5WordsData' },
         ];
 
         const lessonWordsMap = {
