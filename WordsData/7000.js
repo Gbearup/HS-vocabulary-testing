@@ -218,19 +218,35 @@ const unit6WordsData = [
   { "vocab": "profit", "kk": "[`prɑfɪt]", "pos": "n., vt. & vi.", "definition": "n. 利潤 & vt. 對……有利 & vi. 獲利", "extension": "【片語】<br>(1) make a profit 獲利<br>(2) profit from... 從……中獲益<br>【衍生詞】<br>(1) profitable a. 有利的<br>(2) nonprofit a. 不是以賺錢為目標的" },
   { "vocab": "muscle", "kk": "[`mʌsḷ]", "pos": "n.", "definition": "n. 肌肉 (可數)", "extension": "【衍生詞】<br>muscular a. 肌肉的" },
   { "vocab": "flesh", "kk": "[flɛʃ]", "pos": "n.", "definition": "n. (人或動物的) 肉", "extension": "【比較】<br>meat n. (可供食用的動物的) 肉" },
-  { "vocab": "dirt", "kk": "[dɝt]", "pos": "n.", "definition": "n. 泥土；髒東西；灰塵", "extension": "【比較】<br>dirty a. 髒的；卑鄙的，差勁的 & vt. 弄髒" },
+  { "vocab": "dust", "kk": "[dʌst]", "pos": "n.", "definition": "n. 灰塵 & vi. 除去...的灰塵", "extension": "【衍生詞】<br>(1) dusty a. 滿是灰塵的<br>(2) duster n. 撢子" },
+   { "vocab": "dirt", "kk": "[dɝt]", "pos": "n.", "definition": "n. 泥土；髒東西；灰塵", "extension": "【比較】<br>dirty a. 髒的；卑鄙的，差勁的 & vt. 弄髒" },
   { "vocab": "automobile", "kk": "[`ɔtəməˌbil]", "pos": "n.", "definition": "n. 汽車 (= auto)", "extension": "【延伸】<br>vehicle n. 車輛；任何有輪子的運載工具" },
   { "vocab": "headquarters", "kk": "[`hɛdˌkwɔrtɚz]", "pos": "n.", "definition": "n. 總部 (單複數同形；縮寫為 HQ)", "extension": "【反義詞】<br>branch n. 分部；樹枝 & vt. 分岔；長出新枝" },
-  { "vocab": "vision", "kk": "[`vɪʒən]", "pos": "n.", "definition": "n. 視力；影/頭像；眼光，先見，遠見", "extension": "【片語】<br>a person of vision 有遠見的人<br>【衍生詞】<br>(1) visual a. 視力的<br>(2) envision vt. 想像<br>(3) provision n. 準備，供應 (不可數)；乾糧 (恆用複數)<br>(4) supervision n. 監督，管理<br>【延伸】<br>visible a. 肉眼可見的；顯而易見的<br>【反義詞】<br>invisible a. 無形的" },
+  { "vocab": "vision", "kk": "[`vɪʒən]", "pos": "n.", "definition": "n. 視力；影/頭像；眼光，先見，遠見", "extension": "【片語】<br>a person of vision 有遠見的人<br>【衍生詞】<br>(1) visual a. 視力的<br>(2) envision vt. 想像<br>(3) provision n. 準備，供應 (不可數)；乾糧 (恆用複數)<br>(4) supervision n. 監督，管理" },
+  
+   { "vocab": "visible", "kk": "[`vɪsəbḷ]", "pos": "a.", "definition": "a. 肉眼可見的；顯而易見的", "extension": "【反義詞】<br>invisible a. 無形的" },
+  
   { "vocab": "exchange", "kk": "[ɪks`tʃendʒ]", "pos": "vt. & n.", "definition": "vt. & n. 交換", "extension": "【片語】<br>(1) exchange sth with sb 和某人交換某物<br>(2) exchange A for B 以A交換B<br>(3) in exchange for... 交換……<br>【近義詞】<br>(1) change vt. & n. 變換；改變<br>(2) exchangeable a. 可替換的" },
   { "vocab": "practical", "kk": "[`præktɪkḷ]", "pos": "a.", "definition": "a. 實際的", "extension": "【衍生詞】<br>practice n. 練習；常規，習俗；實踐 & vt. 練習<br>【反義詞】<br>impractical a. 不切實際的<br>【延伸】<br>practically adv. 實際地" },
+  
+  { "vocab": "practically", "kk": "[`præktɪkḷɪ]", "pos": "adv.", "definition": "adv. 實際地", "extension": "【片語】<br>practically speaking,... 說的實際一點...<br>practially亦等於almost(幾乎),修飾all、every、any、no等4個字</br>" },
+  
+  
   { "vocab": "mend", "kk": "[mɛnd]", "pos": "vt.", "definition": "vt. 修理，修補；改正", "extension": "【似義詞】<br>(1) repair vt. 修理<br>(2) fix vt. 修理" },
   { "vocab": "constant", "kk": "[`kɑnstənt]", "pos": "a. & n.", "definition": "a. 持續的；穩定的 & n. 恆久不變的數量 (常數)；不變的事物", "extension": "【衍生詞】<br>constancy n. 恆久不變；忠貞不渝" },
   { "vocab": "dramatic", "kk": "[drə`mætɪk]", "pos": "a.", "definition": "a. 戲劇的；戲劇性的；強烈的", "extension": "【衍生詞】<br>drama n. 戲劇<br>【似義詞】<br>drastic a. 激烈的" },
-  { "vocab": "warn", "kk": "[wɔrn]", "pos": "vt.", "definition": "vt. 警告；告誡", "extension": "【片語】<br>(1) warn sb not to + V 警告某人不要……<br>= warn sb against + N/V-ing<br>(2) warn sb of / about... 就……方面警告某人<br>【延伸】<br>warning n. 警告" },
+  
+  { "vocab": "warn", "kk": "[wɔrn]", "pos": "vt.", "definition": "vt. 警告；告誡", "extension": "【片語】<br>(1) warn sb not to + V 警告某人不要……<br>= warn sb against + N/V-ing<br>(2) warn sb of / about... 就……方面警告某人<br>" },
+  
+  { "vocab": "warning", "kk": "[`wɔrnɪŋ]", "pos": "n.", "definition": "n. 警告" },
+  
   { "vocab": "definition", "kk": "[ˌdɛfə`nɪʃən]", "pos": "n.", "definition": "n. 定義；(錄音、電視等的) 清晰度", "extension": "【衍生詞】<br>(1) define vt. 下定義；解釋<br>(2) definite a. 明確的，肯定的<br>(3) definitive a. 明確的；最終的<br>【延伸】<br>HDTV 高解析度/高畫質/高清電視 (*HDTV 是 high definition television 的縮寫)" },
   { "vocab": "afford", "kk": "[ə`fɔrd]", "pos": "vt.", "definition": "vt. 買得起；負擔得起", "extension": "【衍生詞】<br>affordable a. 負擔得起的<br>【用法】<br>afford 通常與 can 或 cannot 並用，形成下列片語：<br>(1) can afford to + V 有能力從事……<br>(2) can afford sth 買得起某物/有能力負擔某物" },
-  { "vocab": "missile", "kk": "[`mɪsḷ]", "pos": "n.", "definition": "n. 飛彈", "extension": "【延伸】<br>rocket n. 火箭" },
+  
+  { "vocab": "missile", "kk": "[`mɪsḷ]", "pos": "n.", "definition": "n. 飛彈" },
+  { "vocab": "rocket", "kk": "[`rɑkɪt]", "pos": "n.", "definition": "n. 火箭" },
+  
+  
   { "vocab": "credit", "kk": "[`krɛdɪt]", "pos": "n. & vt.", "definition": "n. 信譽 (不可數)；學分 (可數) & vt. 將功勞歸因於……", "extension": "【片語】<br>(1) on credit 賒帳，信用貸款<br>(2) a credit card 信用卡<br>(3) sb is credited with sth = sth is credited to sb 某事要歸因於某人的功勞" },
   { "vocab": "educate", "kk": "[`ɛdʒəˌket]", "pos": "vt.", "definition": "vt. 教育，栽培", "extension": "【衍生詞】<br>(1) educator n. 教育學家<br>(2) education n. 教育<br>【延伸】<br>educational a. 教育的；教育性的" },
   { "vocab": "preparation", "kk": "[ˌprɛpə`reʃən]", "pos": "n.", "definition": "n. 準備，預備", "extension": "【片語】<br>(1) in preparation for... 以準備……<br>(2) make preparations for... 為……做準備<br>【衍生詞】<br>prepare vt. & vi. 準備，預備" },
@@ -238,7 +254,11 @@ const unit6WordsData = [
   { "vocab": "anyhow", "kk": "[`ɛnɪˌhaʊ]", "pos": "adv.", "definition": "adv. 無論如何", "extension": "【似義詞】<br>anyway adv. 無論如何" },
   { "vocab": "dinosaur", "kk": "[`daɪnəˌsɔr]", "pos": "n.", "definition": "n. 恐龍；古板的人", "extension": "" },
   { "vocab": "puppet", "kk": "[`pʌpɪt]", "pos": "n.", "definition": "n. 玩偶，木偶；傀儡", "extension": "【似義詞】<br>doll n. 玩偶，洋娃娃" },
-  { "vocab": "squirrel", "kk": "[`skwɝəl]", "pos": "n.", "definition": "n. 松鼠", "extension": "【延伸】<br>koala n. 無尾熊 (= koala bear)<br>donkey n. 驢子<br>ox n. (去勢的) 公牛 (複數為 oxen；公牛為 bull)" }
+  { "vocab": "squirrel", "kk": "[`skwɝəl]", "pos": "n.", "definition": "n. 松鼠", "extension": "【延伸】<br>koala n. 無尾熊 (= koala bear)<br>donkey n. 驢子<br>ox n. (去勢的) 公牛 (複數為 oxen；公牛為 bull)" },
+  { "vocab": "koala", "kk": "[`koʊlə]", "pos": "n.", "definition": "n. 無尾熊 (= koala bear)" },
+  { "vocab": "donkey", "kk": "[`dɑnki]", "pos": "n.", "definition": "n. 驢子" },
+  { "vocab": "ox", "kk": "[`ɑks]", "pos": "n.", "definition": "n. (去勢的) 公牛 (複數為 oxen；公牛為 bull)" }
+
 ];
 
 
