@@ -17,6 +17,7 @@
             <button class="lesson1-btn lesson0-btn active" onclick="location.href='index-TextBook.html'">📚 課本專區</button>
             <button class="lesson1-btn lesson0-btn" onclick="location.href='index-LiveABC.html'">📚 LiveABC 專區</button>
             <button class="lesson1-btn lesson0-btn" onclick="location.href='index-7000.html'">📚 核心單字專區</button>
+            
         </div>
 
 
@@ -31,8 +32,8 @@
             <button class="lesson-btn" onclick="switchLesson('lesson2')">📚 第2課</button>
             <button class="lesson-btn" onclick="switchLesson('lesson3')">📚 第3課</button>
             <button class="lesson-btn" onclick="switchLesson('review1')">📝 Review 1</button>
-
-            <!-- <button class="lesson-btn" onclick="switchLesson('lesson4')">📚 第4課</button>
+            <button class="lesson-btn" onclick="switchLesson('lesson4')">📚 第4課</button>
+            <!-- 
             <button class="lesson-btn" onclick="switchLesson('lesson5')">📚 第5課</button>
             <button class="lesson-btn" onclick="switchLesson('lesson6')">📚 第6課</button>
             <button class="lesson-btn" onclick="switchLesson('review2')">📝 Review 2</button>
@@ -273,6 +274,63 @@
             </div>
         </div>
 
+         <!-- ==================== lesson 4 內容容器 ==================== -->
+        <div id="lesson4-container" class="lesson-content">
+            <div class="nav-tabs">
+                <button class="tab-btn active" onclick="switchTab('l4', 'list')">📖 單字列表</button>
+                <button class="tab-btn" onclick="switchTab('l4', 'quiz')">📝 開始測驗</button>
+            </div>
+            <div id="l4-list-tab" class="tab-content active">
+                <div class="controls">
+                    <input type="text" id="lesson4-searchInput" class="search-input" placeholder="搜尋 Lesson 4 單字、片語、KK音標、中文解釋..." onkeyup="filterWords('lesson4')">
+                </div>
+                <div class="word-grid" id="l4-wordGrid"></div>
+            </div>
+            <div id="l4-quiz-tab" class="tab-content">
+                <div class="quiz-outer-card">
+                    <div class="mode-header-title">🎯 Lesson 4 單字片語互動測驗</div>
+                    <div class="mode-header-desc">請選擇您想要的測驗模式與題數，點擊開始挑戰！</div>
+                    <div class="setup-panel" id="l4-quizSetupPanel">
+                        <div class="setup-group">
+                            <label>選擇測驗題型：</label>
+                            <div class="setup-options">
+                                <button class="setup-btn active" id="l4-typeChoiceBtn" onclick="setQuizType('l4', 'choice')">英選中 (看英選中)</button>
+                                <button class="setup-btn" id="l4-typeChineseToEnglishBtn" onclick="setQuizType('l4', 'chineseToEnglish')">中選英 (看中選英)</button>
+                                <button class="setup-btn" id="l4-typeSpellBtn" onclick="setQuizType('l4', 'spell')">手動拼字填空</button>
+                            </div>
+                        </div>
+                        <div class="setup-group">
+                            <label>選擇測驗題數：</label>
+                            <div class="setup-options">
+                                <button class="setup-btn active" id="l4-count10Btn" onclick="setQuizCount('l4', 10)">10 題</button>
+                                <button class="setup-btn" id="l4-countAllBtn" onclick="setQuizCount('l4', 'all')">全部題數</button>
+                            </div>
+                        </div>
+                        <button class="full-next-btn" onclick="startQuiz('l4')">🚀 開始作答</button>
+                    </div>
+                    <div id="l4-quizActiveArea" style="display: none;">
+                        <div class="sticky-score-bar">
+                            <span id="l4-quizProgress" style="font-weight: bold; color: #4a5568;">進度：0 / 10</span>
+                            <span id="l4-quizScore" style="font-weight: bold; color: var(--btn-blue); font-size: 1.1rem;">得分：0 分</span>
+                        </div>
+                        <div class="quiz-inner-box">
+                            <div class="question-label" id="l4-questionText">載入中...</div>
+                            <div id="l4-quizAnswersArea" class="options-group"></div>
+                            <div class="result-banner" id="l4-quizBanner"></div>
+                        </div>
+                        <button class="full-next-btn" id="l4-quizNextBtn" onclick="nextQuestion('l4')" style="display: none;">下一題 ➔</button>
+                    </div>
+                    <div id="l4-quizFinalResult" style="display: none; text-align: center; padding: 25px; background: #edf2f7; border-radius: 12px;">
+                        <h2 style="margin-top: 0; color: #2d3748;">🎉 Lesson 4 測驗完成！</h2>
+                        <p style="font-size: 1.1rem; color: #4a5568;">您的最終得分：</p>
+                        <div id="l4-finalScoreDisplay" style="font-size: 3rem; font-weight: bold; color: var(--btn-blue); margin: 10px 0 20px 0;">0 / 100</div>
+                        <div id="l4-wrongReviewContainer"></div>
+                        <button class="full-next-btn" onclick="resetQuizSetup('l4')" style="max-width: 240px; margin: 20px auto 0 auto;">🔄 重新設定並再試一次</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- ==================== 總測驗 (All Lessons) 內容容器 ==================== -->
         <div id="all-container" class="lesson-content">
             <div class="nav-tabs">
@@ -345,6 +403,7 @@
             if (lessonId === 'l2') return lesson2Data;
             if (lessonId === 'l3') return lesson3Data;
             if (lessonId === 'rev1') return review1Data;
+            if (lessonId === 'l4') return lesson4Data;
             return allData;
         }
 
@@ -355,6 +414,7 @@
             renderWords('l2', lesson2Data);
             renderWords('l3', lesson3Data);
             renderWords('rev1', review1Data);
+            renderWords('l4', lesson4Data);
             renderWords('all', allData);
         };
     </script>

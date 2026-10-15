@@ -121,5 +121,51 @@
             { vocab: "on the other hand", kk: "", definition: "另一方面", extension: "【片語區】phr. on the other hand" }
         ];
 
+// Lesson 4  單字與片語資料
+        const lesson4Data = [
+    { vocab: "sensitive", kk: "[`sɛnsətɪv]", definition: "敏感的", extension: "" },
+    { vocab: "keen", kk: "[kin]", definition: "敏銳的；渴望的；熱衷的", extension: "" },
+    { vocab: "detect", kk: "[dɪ`tɛkt]", definition: "偵測到；察覺", extension: "" },
+    { vocab: "item", kk: "[`aɪtəm]", definition: "一項物品", extension: "" },
+    { vocab: "accomplish", kk: "[ə`kɑmplɪʃ]", definition: "達成", extension: "【相關詞】<br>accomplishment n. [C] 成就" },
+    { vocab: "disease", kk: "[dɪ`ziz]", definition: "疾病", extension: "" },
+    { vocab: "infected", kk: "[ɪn`fɛktɪd]", definition: "遭感染的", extension: "【相關詞】<br>infect vt. 感染<br>infection n. [C, U] 感染" },
+    { vocab: "locate", kk: "[lo`ket]", definition: "找到……（的位置）；座落於", extension: "【相關詞】<br>location n. [C] 地點" },
+    { vocab: "reward", kk: "[rɪ`wɔrd]", definition: "獎勵；報酬；獎賞；提供報酬", extension: "" },
+    { vocab: "ability", kk: "[ə`bɪlətɪ]", definition: "能力", extension: "" },
+    { vocab: "predict", kk: "[prɪ`dɪkt]", definition: "預測", extension: "" },
+    { vocab: "manage", kk: "[`mænɪdʒ]", definition: "設法成功做到；能夠應付；明智地使用、管理", extension: "【相關詞】<br>management n. [U] 管理" },
+    { vocab: "create", kk: "[kri`et]", definition: "創造；產生出", extension: "【相關詞】<br>creation n. [U] 創造；創建" },
+    { vocab: "expose", kk: "[ɪk`spoz]", definition: "使接觸；使體驗；使暴露於；使遭受", extension: "【相關詞】<br>exposure n. [U] 暴露" },
+    { vocab: "perform", kk: "[pɚ`fɔrm]", definition: "做某事；做某種行為；表演", extension: "【相關詞】<br>performance n. [C] 表演" },
+    { vocab: "behavior", kk: "[bɪ`hevjɚ]", definition: "行為；表現", extension: "【相關詞】<br>behave vi. 表現" },
+    { vocab: "alert", kk: "[ə`lɝt]", definition: "警示；警覺的", extension: "" },
+    { vocab: "complete", kk: "[kəm`plit]", definition: "已完成的；已結束的；完整的；完成", extension: "" },
+    { vocab: "assign", kk: "[ə`saɪn]", definition: "指派", extension: "【相關詞】<br>assignment n. [C] 作業；工作" },
+    { vocab: "specific", kk: "[spə`sɪfɪk]", definition: "特定的", extension: "" },
+    { vocab: "due to", kk: "", definition: "因為", extension: "【片語】prep. phr." },
+    { vocab: "all of a sudden", kk: "", definition: "突然間", extension: "【片語】adv. phr." },
+    { vocab: "turn out", kk: "", definition: "結果是", extension: "【片語】v. phr." },
+    { vocab: "come across", kk: "", definition: "遇到；偶然碰見", extension: "【片語】v. phr." },
+    { vocab: "carry out", kk: "", definition: "執行；進行", extension: "【片語】v. phr." },
+    { vocab: "sniff", kk: "[snɪf]", definition: "嗅；聞", extension: "【字彙辨識】vt. vi." },
+    { vocab: "sniffer dog", kk: "[`snɪfɚ dɔɡ]", definition: "嗅探犬", extension: "【字彙辨識】n. [C]" },
+    { vocab: "official", kk: "[ə`fɪʃəl]", definition: "公務員", extension: "【字彙辨識】n. [C]" },
+    { vocab: "brown root rot disease", kk: "[braʊn rut rɑt dɪ`ziz]", definition: "褐根病", extension: "【字彙辨識】n." },
+    { vocab: "onset", kk: "[`ɑnˌsɛt]", definition: "開始", extension: "【字彙辨識】n. sing." },
+    { vocab: "diabetes", kk: "[ˌdaɪə`bitɪs]", definition: "糖尿病", extension: "【字彙辨識】n. [U]" },
+    { vocab: "blood sugar", kk: "[`blʌd `ʃʊɡɚ]", definition: "血糖", extension: "【字彙辨識】n. [U]" },
+    { vocab: "above-mentioned", kk: "[ə`bʌv `mɛnʃənd]", definition: "以上提到的", extension: "【字彙辨識】adj." },
+    { vocab: "chemical", kk: "[`kɛmɪkəl]", definition: "化學的", extension: "【字彙辨識】adj." },
+    { vocab: "odor", kk: "[`odɚ]", definition: "（難聞的）氣味", extension: "【字彙辨識】n. [C]" }
+];
+
         // 總測驗資料（自動合併 1~3 課與 Review 1）
-        const allData = [...lesson1Data, ...lesson2Data, ...lesson3Data, ...review1Data];
+        const allData = [
+            ...lesson1Data, 
+            ...lesson2Data, 
+            ...lesson3Data, 
+            ...review1Data,
+            ...lesson4Data
+        
+        ];
